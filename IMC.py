@@ -1,7 +1,8 @@
-def calculaIMC(peso, altura):
-    IMC = (peso / (altura**2))
-    print(f'Seu IMC é {IMC:.2f}')
+def calcula_imc(p, a):
+    imc = (p / (a**2))
+    print(f'Seu IMC é {imc:.2f}')
     return IMC
+
 
 print('Ola! Bem vindo ao programa IMC')
 nome = input('Me diga seu nome: ')
@@ -9,7 +10,7 @@ nome = input('Me diga seu nome: ')
 altura = float(input(f'Agora {nome} me diga sua altura :'))
 peso = float(input(f'Agora {nome} me diga seu peso :'))
 
-IMC = calculaIMC(peso, altura)
+IMC = calcula_imc(peso, altura)
 
 if IMC < 17:
     print(f'{nome}, seu IMC está MUITO ABAIXO do peso.')
